@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación DNI</title>
+
+  <link rel="stylesheet" href=styles.css>
+  <link rel="icon" href=favicon.ico>
+
+</head>
+
+<body>
+
+  <div class="topContainer" id="header">
+    <h1>Validación Documento Nacional de Identidad</h1>
+  </div>
+
+  <div class="item" id="item3">
+    <p id="fxOutcome"></p>
+    <p id="validate"></p>
+  </div>
+
+  <div class="container">
+    <div class="item" id="item1">
+      <img src="images\dniImage.png" id="transparencia" alt="dni-imagen">
+    </div>
+    <form action="#" form id="myForm">
+      <div class="item" id="item2">
+        <label for="numero"><strong>Número de DNI: </strong><input type="text" id="numero" placeholder="8 números" pattern="[0-9]{8}" required></label><br />
+        <label for="letra"><strong>Letra: </strong></label><input type="text" id="letra" placeholder="1 letra" maxlength="1" pattern="[A-Za-z]" required></label>
+
+        <h1 id="h1"></h1>
+        <button id="btn" input type="submit" onclick="validar();"> Validar</button>
+        <input type="button" id="btn" value="Resetear" onclick="location.reload()" />
+    </form>
+  </div>
+  </div>
+  </div>
+
+  <div class="bottonContainer">
+    <div class="item" id="item4">
+      <p>*Recuerde incluir todos los dígitos y letra de su documento de identidad para que pueda ser validado.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
